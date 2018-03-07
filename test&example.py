@@ -1,0 +1,16 @@
+from tiny_Q import QPOOL
+
+testQpool=QPOOL()
+Q1=testQpool.createQ('t1')
+Q1.put(1)
+Q1.put(2)
+Q1.put(3)
+Q1.put(4)
+Q1.put(5)
+#print(Q1.see())
+#print(Q1.get())
+#print(Q1.get())
+#print(Q1.get())
+Q2=testQpool.createQ('t2')
+print(Q2)
+testQpool.showQs()
